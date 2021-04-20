@@ -46,7 +46,7 @@ const Home = (response) => {
                   <h2 className="box-title">Top Cities</h2>
                   <div className="dlab-separator bg-primary"></div>
                 </div>
-                <Popcity cities={cities }/>
+                <Popcity cities={cities}/>
               </div>
             </div>
           </div>
@@ -57,10 +57,16 @@ const Home = (response) => {
   )
 }
 export const getServerSideProps = async (context) => {
-  const response = await axios.get(`${BASE_URL}/page/home`)
+  let response = {};
+  try {
+     response = await axios.get(`${BASE_URL}/page/home`)
     .then(({ data }) => {
       return data
     })
+  } catch (error) {
+    response = {};
+  }
+  console.log(response);
   return {
     props: {
       response

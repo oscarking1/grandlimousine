@@ -43,7 +43,7 @@ class popCity extends Component{
 					
 						<div className="featured-bx m-b30">
 							<div className="featured-media">
-								<Link href={`/locations/${item.slug}`}><a><img src={`${STORAGE_URL}/${item.featured_image}`} alt="city image"/></a></Link>
+								<Link href={`/locations/${item.slug}`}><a><img src={item.banner_image ? `${STORAGE_URL}/${item.banner_image}` : '/images/destinations/pic4.jpg'} alt="city image"/></a></Link>
 								
 							</div>	
 							<div className="featured-info">
@@ -54,7 +54,7 @@ class popCity extends Component{
 									<li><i className="fa fa-star"></i></li>
 									<li><i className="fa fa-star"></i></li>
 								</ul>
-								<h5 className="title"><Link href={"./"}>{item.name}</Link></h5>
+								<h5 className="title"><Link href={`/locations/${item.slug}`}>{item.title}</Link></h5>
 								<ul className="featured-category">
 									
 									<li><i className="fa fa-map-o"></i> 30+ Listing</li>

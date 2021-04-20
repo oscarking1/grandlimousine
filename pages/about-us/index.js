@@ -6,7 +6,7 @@ import { BASE_URL } from '../../config';
 import axios from 'axios'
 const About = (response) => {
     let res = response ? response.response : null;
-    let page = { description: "" };
+    let page = { description: "",meta_title:"",meta_description:"",meta_keywords:"" };
     if (Object.keys(res).length > 0) {
         page = res.page;
     }

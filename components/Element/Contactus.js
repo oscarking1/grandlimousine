@@ -1,7 +1,5 @@
 import React, {Component} from 'react';
-import {Link} from 'react-router-dom';
-
-var bnr = require('./../../images/banner/inner-banner.jpg');
+var bnr = '/images/banner/inner-banner.jpg';
 
 class Contactus extends Component{
 	render(){

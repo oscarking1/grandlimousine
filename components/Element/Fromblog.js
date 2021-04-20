@@ -99,7 +99,7 @@ class Fromblog extends Component {
 										<Link to={"/blog-details"}>Tarvel</Link>
 									</div> */}
 									<div className="dlab-post-title ">
-										<h5 className="post-title"><Link href={"./"}>{item.title}</Link></h5>
+										<h5 className="post-title"><Link href={`/${item.slug}`}>{item.title}</Link></h5>
 									</div>
 									<div className="dlab-post-text">
 									<p>{item.short_description}</p>
@@ -107,7 +107,7 @@ class Fromblog extends Component {
 									<div className="dlab-post-meta">
 										<ul>
 											{/* <li className="post-author"><i className="icon-user"></i>By <Link href= {"/blog-details"}>{item.name}</Link> </li> */}
-											<li className="clickhere"> <Link href= {"./"}>Click Here</Link> </li>
+											<li className="clickhere"> <Link href= {`/${item.slug}`}>Click Here</Link> </li>
 										</ul>
 									</div>
 								</div>
