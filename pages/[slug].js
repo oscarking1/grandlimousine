@@ -41,14 +41,16 @@ const Service = (response) => {
 export const getServerSideProps = async (context) => {
     let slug = context.params.slug
     let response = {};
-        try {
+       /* try {*/
             response = await axios.get(`${BASE_URL}/get/servicePage/${slug}`)
             .then(({ data }) => {
                 return data
             })
-        } catch (error) {
+        /*} catch (error) {
             response = {};
-        }
+        } */
+console.log('RES',response);
+
     return {
         props: {
             response
