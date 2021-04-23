@@ -37,10 +37,15 @@ const Superbowl = (response) => {
     )
 }
 export const getServerSideProps = async (context) => {
-    const response = await axios.get(`${BASE_URL}/page/super-bowl`)
-        .then(({ data }) => {
-            return data
-        })
+    let response = {};
+    try {
+        response = await axios.get(`${BASE_URL}/page/super-bowl`)
+            .then(({ data }) => {
+                return data
+            })
+    } catch (error) {
+        response = {};
+    }
     return {
         props: {
             response
