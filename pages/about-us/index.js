@@ -20,7 +20,7 @@ const About = (response) => {
             <main className="page-wraper">
                 <div className="page-content bg-white">
                     {
-                        Object.keys(location).length > 0 ?
+                        Object.keys(page).length > 0 ?
                             <div>
                                 <InnerBanner banner={page.banner_image ? page.banner_image : null} />
                                 <div dangerouslySetInnerHTML={{ __html: page.description }} />
