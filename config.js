@@ -1,3 +1,3 @@
-const BASE_URL = 'http://127.0.0.1:8000/api'
-const STORAGE_URL = 'http://127.0.0.1:8000/storage'
+const BASE_URL = 'http://52.86.219.102:8094/grand/public/api'
+const STORAGE_URL = 'http://52.86.219.102:8094/grand/public/storage'
 export {BASE_URL,STORAGE_URL}
