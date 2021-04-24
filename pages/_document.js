@@ -12,29 +12,24 @@ export default class MyDocument extends Document {
             rel="stylesheet"
             href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
           />
-          <script  dangerouslySetInnerHTML={{
-            __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+          <script dangerouslySetInnerHTML={{
+            __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
             j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
             })(window,document,'script','dataLayer','GTM-5P942W4');`,
-          }}></script>
+          }}>
+          </script>
         </Head>
         <body>
-          <ScriptIframe/>
+        <noscript dangerouslySetInnerHTML={{ __html: `<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5P942W4"
+height="0" width="0" style="display:none;visibility:hidden"></iframe>`}}></noscript>
           <Main />
           <NextScript />
         </body>
       </Html>
     );
   }
-}
-
-export const ScriptIframe = () => {
-  return (
-    <noscript><iframe dangerouslySetInnerHTML={{ __html: `src="https://www.googletagmanager.com/ns.html?id=GTM-5P942W4" height="0" width="0" style="display:none;visibility:hidden"` }}>
-    </iframe>
-    </noscript>
-  )
 }
 
 // `getInitialProps` belongs to `_document` (instead of `_app`),
@@ -72,7 +67,7 @@ MyDocument.getInitialProps = async (ctx) => {
     });
 
   const initialProps = await Document.getInitialProps(ctx);
-
+  
   return {
     ...initialProps,
     // Styles fragment is rendered after the app and page rendering finish.
