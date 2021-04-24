@@ -66,7 +66,6 @@ export const getServerSideProps = async (context) => {
   } catch (error) {
     response = {};
   }
-  console.log(response);
   return {
     props: {
       response

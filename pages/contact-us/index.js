@@ -6,9 +6,9 @@ import Toplimousine from '../../components/Element/Toplimousine';
 class Contactus extends Component {
     render() {
         const meta = {
-            title: 'Contact US | Limo Service Atlanta | Grand Limousine',
-            description: "GrandLimousine.com provides best Corporate Car Service in Atlanta. Book Your Ride Online: (404) 424-4499 ? info@grandlimousine.com",
-            keywords: 'react,meta,document,html,tags'
+            title: 'Contact Us',
+            description: "BOOK YOUR RIDE INSTANTLY TRAVEL IN COMFORT. ALWAYS ON TIME.",
+            keywords: 'car service, limousine Service, airport chauffeur service Houston, chauffeur car hire, sprinter limousine, transportation for events, corporate transportation, weddings, limousine service Houston, proms, party bus'
         };
         return (
             <Layout  meta={meta}>
@@ -16,7 +16,7 @@ class Contactus extends Component {
 					<section className="section-full content-inner">
 						<div className="container">
 							<div className="section-head inner-section-head text-black text-center">
-								<h2 className="box-title">Contact Us – Grand Limousine</h2>
+								<h1 className="box-title">Contact Us – Grand Limousine</h1>
 								<div className="dlab-separator bg-primary"></div>
 								<p>The World’s Leading Provider of High-Quality Car & Limousine Transportation</p>
 							</div>

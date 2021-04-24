@@ -44,7 +44,19 @@ export const getServerSideProps = async (context) => {
                     return data
                 })
         } catch (error) {
-            response = {};
+            if (error.response) {
+                if (error.response.status == 404) {
+                    return {
+                        notFound: true,
+                    }
+                }
+            }
+            return {
+                redirect: {
+                  destination: '/500',
+                  permanent: false,
+                },
+              }
         }
     return {
         props: {
