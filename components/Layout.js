@@ -12,6 +12,7 @@ export default function Layout({ children,meta }) {
         <meta name="theme-color" content="#000000" />
         <meta name="description" content={meta && meta.description} />
         <meta name="keywords" content={meta && meta.keywords} />
+        <link rel="canonical" href={`https://www.grandlimousine.com/${(meta && meta.slug) ? meta.slug+"/" : ''}`} />
         {/* <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" /> */}
       </Head>
       <Header />

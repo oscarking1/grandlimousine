@@ -8,10 +8,12 @@ const Service = (response) => {
     let title = service ? service.meta_title : 'GRAND LIMOUSINE';
     let description = service ? service.meta_description : 'GRAND LIMOUSINE WEBSITE';
     let keywords = service ? service.meta_keywords : 'GRAND LIMOUSINE WEBSITE';
+    let slug = service ? service.slug : '';
     const meta = {
         title: title ? title : 'GRAND LIMOUSINE',
         description: description ? description : 'GRAND LIMOUSINE WEBSITE',
-        keywords: keywords ?  keywords : 'react,meta,document,html,tags'
+        keywords: keywords ? keywords : 'react,meta,document,html,tags',
+        slug: slug
     };
     return (
         <Layout meta={meta}>

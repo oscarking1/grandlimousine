@@ -8,10 +8,14 @@ const Location = (response) => {
     let title = location ? location.meta_title : 'GRAND LIMOUSINE';
     let description = location ? location.meta_description : 'GRAND LIMOUSINE WEBSITE';
     let keywords = location ? location.meta_keywords : 'GRAND LIMOUSINE WEBSITE';
+    let slug = 'locations/';
+        slug+=location ? location.slug : '';
+        
     const meta = {
         title: title ? title : 'GRAND LIMOUSINE',
         description: description ? description : 'GRAND LIMOUSINE WEBSITE',
-        keywords: keywords ? keywords : 'react,meta,document,html,tags'
+        keywords: keywords ? keywords : 'react,meta,document,html,tags',
+        slug: slug
     };
     return (
         <Layout meta={meta}>

@@ -8,8 +8,9 @@ class Contactus extends Component {
         const meta = {
             title: 'Contact Us',
             description: "BOOK YOUR RIDE INSTANTLY TRAVEL IN COMFORT. ALWAYS ON TIME.",
-            keywords: 'car service, limousine Service, airport chauffeur service Houston, chauffeur car hire, sprinter limousine, transportation for events, corporate transportation, weddings, limousine service Houston, proms, party bus'
-        };
+			keywords: 'car service, limousine Service, airport chauffeur service Houston, chauffeur car hire, sprinter limousine, transportation for events, corporate transportation, weddings, limousine service Houston, proms, party bus',
+			slug: 'contact-us'
+		};
         return (
             <Layout  meta={meta}>
                	<InnerBanner />

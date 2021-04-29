@@ -6,14 +6,15 @@ import axios from 'axios'
 import Error from '../../components/Element/Error'
 const Superbowl = (response) => {
     let res = response ? response.response : null;
-    let page = { description: "", meta_title: "", meta_description: "", meta_keywords: "" };
+    let page = { description: "", meta_title: "", meta_description: "", meta_keywords: "",slug:"" };
     if (Object.keys(res).length > 0) {
         page = res.page;
     }
     let meta = {
         title: page.meta_title,
         description: page.meta_description,
-        keywords: page.meta_keywords
+        keywords: page.meta_keywords,
+        slug: page.slug
     }
     return (
         <Layout meta={meta}>

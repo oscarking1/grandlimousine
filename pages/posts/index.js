@@ -8,7 +8,8 @@ class Post extends Component{
         const meta = {
             title: 'Latest Post | Grand Limousine',
             description: "Check out our latest posts and have a glimpse of our luxury transportation service. Contact our team to learn more about our luxury car services.",
-            keywords: 'car service, limousine Service, airport chauffeur service Houston, chauffeur car hire, sprinter limousine, transportation for events, corporate transportation, weddings, limousine service Houston, proms, party bus'
+            keywords: 'car service, limousine Service, airport chauffeur service Houston, chauffeur car hire, sprinter limousine, transportation for events, corporate transportation, weddings, limousine service Houston, proms, party bus',
+            slug: 'posts'
         };
     return(
         <Layout meta={meta}>
