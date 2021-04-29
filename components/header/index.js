@@ -61,18 +61,9 @@ class Header extends Component {
                                                  </a>
                                         </Link>
                                         <ul className="sub-menu">
-                                            <li><Link href={"/car-service/"} rel="noopener noreferrer" ><a>Car Service <span className="tag-new">New</span></a></Link></li>
-                                            <li><Link href={"/mcdonough-car-service-atlanta-atl/"} rel="noopener noreferrer" ><a>McDonough Car Service <span className="tag-new">New</span></a></Link></li>
-                                            <li><Link href={"/peachtree-city-car-service-atlanta-atl/"} rel="noopener noreferrer" ><a>Peachtree City Car Service <span className="tag-new">New</span></a></Link></li>
-                                            <li><Link href={"/tampa-car-service-tampa-tpa-airport/"} rel="noopener noreferrer" ><a>Tampa,FL Limousine <span className="tag-new">New</span></a></Link></li>
-                                             <li><Link href={"/tampa-bay-buccaneers-football-limo-service/"} rel="noopener noreferrer" ><a>Tampa Bay Buccaneers <span className="tag-new">New</span></a></Link></li>
-											<li><Link href={"/lawrenceville-car-service-atlanta-atl/"} rel="noopener noreferrer" ><a>Lawrenceville Car Service <span className="tag-new">New</span></a></Link></li>
-											<li><Link href={"/cumming-car-service/"} rel="noopener noreferrer" ><a>Cumming Car Service <span className="tag-new">New</span></a></Link></li>
-											<li><Link href={"/sea-island-car-service-jacksonville-jax/"} rel="noopener noreferrer" ><a>Sea Island Car Service <span className="tag-new">New</span></a></Link></li>
-                                            <li><Link href={"/grapevine-car-service-dallas-fort-worth-dfw/"} rel="noopener noreferrer" ><a>Grapevine Car Service <span className="tag-new">New</span></a></Link></li>
-                                            
-                                            <li><Link href={"/limousine-service/"} rel="noopener noreferrer">Limousine Service</Link></li>
-											<li><Link href={"/corporate-transportation/"} rel="noopener noreferrer">Corporate Transportation</Link></li>
+											<li><Link href={"/car-service/"} rel="noopener noreferrer" ><a>Car Service <span className="tag-new">New</span></a></Link></li>
+											<li><Link href={"/limousine-service/"} rel="noopener noreferrer">Limousine Service</Link></li>
+											<li><Link href={"/corporate-transportation/"} rel="noopener noreferrer"><a>Corporate Transportation</a></Link></li>
 											<li><Link href={"/wedding-transportation/"} rel="noopener noreferrer"><a>Wedding Limousine Service<span className="tag-new">New</span></a></Link></li>
 											<li><Link href={"/airport-car-service/"} rel="noopener noreferrer"><a>Airport Car Service<span className="tag-new">New</span></a></Link></li>
 											<li><Link href={"/wine-tour/"} rel="noopener noreferrer"><a>Wine Tour<span className="tag-new">New</span></a></Link></li>
@@ -84,8 +75,7 @@ class Header extends Component {
 											<li><Link href={"/bachelorette-party/"} rel="noopener noreferrer"><a>Bachelorette Party<span className="tag-new">New</span></a></Link></li>
 											<li><Link href={"/graduation-limo/"} rel="noopener noreferrer"><a>Graduation Limo<span className="tag-new">New</span></a></Link></li>
 											<li><Link href={"/concert-limo/"} rel="noopener noreferrer"><a>Concert Limo<span className="tag-new">New</span></a></Link></li>
-											
-                                        </ul>
+										</ul>
                                     </li>
                                     <li className="down"><Link  href={"/locations/"} rel="noopener noreferrer"><a>Top Cities <i className="fa fa-chevron-down"></i></a></Link>
 										<ul className="sub-menu">

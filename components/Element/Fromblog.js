@@ -89,15 +89,12 @@ class Fromblog extends Component {
                 	
                 <Slider className=" owl-carousel owl-none blog-shadow-out" {...settings}>
                     {services.map((item, index) => (
-                        <div className="item p-3" key={index}>
+						<div className="row">
+							<div className="col-md-12">
+
+							<div className="item p-3" key={index}>
 							<div className="blog-post dez-blog">
-								{/* <div className="dlab-post-media"> 
-									<Link to={"./"}><img src={item.image} alt=""/></Link> 
-								</div> */}
 								<div className="dlab-info">
-									{/* <div className="category-tag">
-										<Link to={"/blog-details"}>Tarvel</Link>
-									</div> */}
 									<div className="dlab-post-title ">
 										<h5 className="post-title"><Link href={`/${item.slug}`}>{item.title}</Link></h5>
 									</div>
@@ -106,13 +103,16 @@ class Fromblog extends Component {
 									</div>
 									<div className="dlab-post-meta">
 										<ul>
-											{/* <li className="post-author"><i className="icon-user"></i>By <Link href= {"/blog-details"}>{item.name}</Link> </li> */}
 											<li className="clickhere"> <Link href= {`/${item.slug}`}>Click Here</Link> </li>
 										</ul>
 									</div>
 								</div>
 							</div>
 						</div>
+							</div>
+
+
+				   		</div>
                     ))}
 					
                 </Slider>
