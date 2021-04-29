@@ -89,7 +89,7 @@ class Fromblog extends Component {
                 	
                 <Slider className=" owl-carousel owl-none blog-shadow-out" {...settings}>
                     {services.map((item, index) => (
-						<div className="row">
+						<div className="row" key={index}>
 							<div className="col-md-12">
 
 							<div className="item p-3" key={index}>
