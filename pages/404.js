@@ -1,6 +1,8 @@
 import React from 'react';
 import Head from 'next/head'
 import Link from 'next/link'
+import Layout from '../components/Layout';
+import InnerBanner from '../components/Element/Innerbanner';
 export default function Custom404() {
 	let meta = {
 		title: "Page not found - Grand Limousine",
@@ -8,7 +10,8 @@ export default function Custom404() {
 		keywords: "Page not found - Grand Limousine"
 	}
 	return (
-		
+		<Layout meta={meta}>
+			 <InnerBanner banner={ null}/>
 		<main className="page-wraper">
 			 <Head>
 				<title>{meta && meta.title}</title>
@@ -38,6 +41,7 @@ export default function Custom404() {
 					</div>
 				</div>
 			</section>
-		</main>
+			</main>
+		</Layout>
 	)
 }

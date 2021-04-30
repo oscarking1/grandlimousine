@@ -1,5 +1,4 @@
 import React from 'react'
-import Link from 'next/link'
 import InnerBanner from '../components/Element/Innerbanner';
 import Fromblog from '../components/Element/Fromblog';
 import Popcity from '../components/Element/PopCity';
