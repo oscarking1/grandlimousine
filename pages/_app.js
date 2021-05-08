@@ -1,9 +1,9 @@
 import React, { Fragment, useEffect } from 'react'
 import '../css/plugins.css';
 import '../css/templete.css';
-import '../css/skin/skin-1.css';
-import '../css/slick/slick-theme.min.css';
-import '../css/slick/slick.min.css';
+// import '../css/skin/skin-1.css';
+// import '../css/slick/slick-theme.min.css';
+// import '../css/slick/slick.min.css';
 import '../css/style.css';
 function MyApp({ Component, pageProps }) {
   useEffect(() => {

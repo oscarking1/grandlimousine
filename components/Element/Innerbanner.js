@@ -10,11 +10,14 @@ class InnerBanner extends Component{
 			bnr = STORAGE_URL+"/"+this.props.banner;
 		}
 		return(
-			<div className="inner-banner overlay-black-middle" style={{backgroundImage:"url("+ bnr + ")"}}>
+			<div className="inner-banner overlay-black-middle" id="home-slider" style={{backgroundImage:"url("+ bnr + ")"}}>
 				<div className="container">        
 					<div className="row">
 						<div className="col-md-6">
-								<Bookingform />
+							{
+								process.browser ? <Bookingform /> : <></>
+							}
+								
 						</div>
 						<div className="col-md-6">
 							<div className="bnr-content text-right">
