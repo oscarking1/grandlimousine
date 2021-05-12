@@ -6,10 +6,10 @@ export default class MyDocument extends Document {
       <Html lang="en-US">
         <Head>
           {/* PWA primary color */}
-          <link
+          {/* { <link
             rel="stylesheet"
             href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
-          />
+          /> } */}
           <script dangerouslySetInnerHTML={{
             __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
             new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],

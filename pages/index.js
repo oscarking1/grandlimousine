@@ -65,7 +65,7 @@ const Home = (response) => {
   }
   // console.log('index',currentIndex);
   document.getElementById('home-slider').style=images[currentIndex]}
-  ,4000);
+  ,40000);
   }
   
   return (

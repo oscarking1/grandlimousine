@@ -10,7 +10,7 @@ class Footer extends Component{
 						<div className="row">
 							<div className="col-xl-5 col-lg-4 col-md-12 col-sm-12">
 								<div className="widget">
-									<img src="/images/logo-grand.png" className="m-b15" alt="" width="180" />
+									<img src="/images/logo-grand.png" className="m-b15" alt="" width="180px" height="58px"/>
 									<p className="text-capitalize m-b20">Grand Limousine and chauffeur service is committed to the success of your business or leisure travel. We are proud to provide all of our clients with the highest level of personalized care and chauffeur service.</p>
 									<div className="subscribe-form m-b20">
 										<form className="dzSubscribe" action="script/mailchamp.php" method="post">
@@ -40,7 +40,6 @@ class Footer extends Component{
 										<li><Link href={"/"} rel="noopener noreferrer">Grand Limousine</Link></li>
 										<li><Link href={"/super-bowl/"} rel="noopener noreferrer">The Super Bowl</Link></li>
 										<li><Link href={"/about-us/"} rel="noopener noreferrer">About Us</Link></li>
-										<li><Link href={""} rel="noopener noreferrer">Services & Beauty</Link></li>
 										<li><Link href={"/locations/"} rel="noopener noreferrer">Top Cities</Link></li>
 										<li><Link href={"/posts/"} rel="noopener noreferrer">Posts</Link></li>
 										<li><Link href={"/contact-us/"} rel="noopener noreferrer">Contact Us</Link></li>

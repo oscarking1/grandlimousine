@@ -1,0 +1,51 @@
+/**======================================
+    CONTACT US PAGE CSS START HERE
+=========================================**/
+.inner-section-head {
+    position: relative;
+    padding-bottom: 10px;
+   }
+   
+   .inner-section-head:before {
+    position: absolute;
+    content: '';
+    width: 60%;
+    height: 1px;
+    background: #ddd;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+   }
+   .contact-us-main h4 {
+    padding-bottom: 40px;
+   }
+   .deal-with-us {
+    margin-top: 70px;
+   }
+   .deal-with-us strong {
+    font-weight: 700;
+   }
+   .deal-with-us ul {
+    text-align: center;
+    list-style: none;
+    margin-top: 50px;
+   }
+   
+   .deal-with-us ul li {
+    font-weight: 500;
+   }
+   
+   .deal-with-us ul li a {
+    font-weight: 400;
+    color: #ab8b64;
+   }
+   
+   .deal-with-us ul li a:hover {
+    color: #15141a;
+   }
+
+
+/**======================================
+    CONTACT US PAGE CSS END HERE
+=========================================**/

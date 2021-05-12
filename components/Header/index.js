@@ -38,7 +38,7 @@ class Header extends Component {
                         <div className="container clearfix">
 
                             <div className="logo-header mostion">
-                                <Link href={"/"} className="logo-1"><img src="/images/logo-grand.png" alt="Logo Grand Limousine" /></Link>
+                                <Link href={"/"} className="logo-1"><img src="/images/logo-grand.png" width="180px" height="59px" alt="Logo Grand Limousine" /></Link>
                             </div>
 
                             <button className="navbar-toggler collapsed navicon  justify-content-end" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -83,19 +83,19 @@ class Header extends Component {
 											<li><Link href={"/locations/augusta/"} rel="noopener noreferrer"><a>Augusta, GA<span className="tag-new">New</span></a></Link></li>
 											<li><Link href={"/locations/columbus/"} rel="noopener noreferrer"><a>Columbus, GA<span className="tag-new">New</span></a></Link></li>
 											<li><Link href={"/locations/chicago/"} rel="noopener noreferrer"><a>Chicago, IL<span className="tag-new">New</span></a></Link></li>
-											<li><Link href={"/locations/destin/"} rel="noopener noreferrer"><a>Destin, FL<span className="tag-new">New</span></a></Link></li>
+											<li><Link href={"/locations/destin-fl-32540/"} rel="noopener noreferrer"><a>Destin, FL<span className="tag-new">New</span></a></Link></li>
 											<li><Link href={"/locations/gray/"} rel="noopener noreferrer"><a>Gray, GA<span className="tag-new">New</span></a></Link></li>
 											<li><Link href={"/locations/houston/"} rel="noopener noreferrer"><a>Houston, TX<span className="tag-new">New</span></a></Link></li>
 											<li><Link href={"/locations/jacksonville/"} rel="noopener noreferrer"><a>Jacksonville, FL<span className="tag-new">New</span></a></Link></li>
 											<li><Link href={"/locations/los-angeles/"} rel="noopener noreferrer"><a>Los Angeles, CA <span className="tag-new">New</span></a></Link></li>
 											<li><Link href={"/locations/kentucky-car-service/"} rel="noopener noreferrer"><a> Louisville, KY <span className="tag-new">New</span></a></Link></li>
-											<li><Link href={"/locations/macon/"} rel="noopener noreferrer"><a>Macon, GA<span className="tag-new">New</span></a></Link></li>
+											<li><Link href={"/locations/macon-ga-31201/"} rel="noopener noreferrer"><a>Macon, GA<span className="tag-new">New</span></a></Link></li>
 											<li><Link href={"/locations/miami/"} rel="noopener noreferrer"><a>Miami, FL<span className="tag-new">New</span></a></Link></li>
 											<li><Link href={"/locations/new-york/"} rel="noopener noreferrer"><a>New York<span className="tag-new">New</span></a></Link></li>
 											<li><Link href={"/locations/orlando/"} rel="noopener noreferrer"><a>Orlando, FL<span className="tag-new">New</span></a></Link></li>
 											<li><Link href={"/locations/palm-beach/"} rel="noopener noreferrer"><a>Palm Beach, FL<span className="tag-new">New</span></a></Link></li>
 											<li><Link href={"/locations/san-francisco/"} rel="noopener noreferrer"><a>San Francisco, CA<span className="tag-new">New</span></a></Link></li>
-											<li><Link href={"/locations/savannah/"} rel="noopener noreferrer"><a>Savannah, GA<span className="tag-new">New</span></a></Link></li>
+											<li><Link href={"/locations/savannah-ga-31302/"} rel="noopener noreferrer"><a>Savannah, GA<span className="tag-new">New</span></a></Link></li>
 											<li><Link exact href={"/locations/"} rel="noopener noreferrer"><a>All Locations & Services<span className="tag-new">New</span></a></Link></li>
 										
 										</ul>

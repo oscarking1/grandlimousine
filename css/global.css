@@ -1,0 +1,173 @@
+
+/**======================================
+ CUSTOM CLASS CSS START HERE
+=========================================**/
+
+.heading h4, .heading h2 {
+    font-family: "Open Sans", Open Sans;
+    font-size: 18.6px;
+    font-weight: 600;
+    line-height: 28px;
+    padding-top: 20px;
+    color: #ab8b64;
+   }
+   form.form-style {
+    text-align: center;
+   }
+   form.form-style input {
+    border-color: #9a9797;
+    height: 43px;
+   }
+   
+   form.form-style ::placeholder {
+    color: #ccc;
+    font-size: 15px;
+   }
+   
+   form.form-style input:focus {
+    border-color: #ab8b64;
+   }
+   
+   button.submit-btn, .custom-btn a, a.custom-btn {
+    background-color: #AB8B64;
+    color: #ffffff !important;
+    line-height: 1;
+    border: 0px;
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 15px;
+    font-size: 15px;
+    padding: 12px 24px;
+    -webkit-border-radius: 3px;
+    border-radius: 0px;
+    text-align: center;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+   }
+   
+   button.submit-btn:hover,
+   .custom-btn a:hover,
+   a.custom-btn:hover {
+    background-color: #15141a;
+   }
+   .cities-content a {
+    color: #ab8b64;
+   }
+   
+   .cities-content a:hover {
+    color: #000;
+   }
+   .inner-banner {
+    min-height: 550px;
+    padding-top: 60px;
+    display: flex;
+    align-items: center;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   }
+   .inner-banner .bnr-content h2 a {
+    color: #fff;
+    font-weight: 400;
+   }
+   
+   .inner-banner .bnr-content h2 a:hover {
+    text-decoration: underline;
+   }
+   
+   .inner-banner .bnr-content h6, 
+   .inner-banner .bnr-content h3, 
+   .inner-banner .bnr-content h3 a {
+    color: #fff;
+    font-family: "Open Sans", Open Sans;
+   }
+   
+   .inner-banner .bnr-content h2, 
+   .inner-banner .bnr-content h6 {
+    margin-bottom: 15px;
+   }
+   .inner-banner .bnr-content h2 a {
+    font-size: 38px;
+   }
+   .inner-banner .bnr-content h2 a,
+   .inner-banner .bnr-content h3 a, 
+   .inner-banner .bnr-content h3 {
+    font-weight: 600;
+   }
+   .inner-banner .bnr-content h3 {
+    font-size: 40px;
+    margin: 40px 0 0 0;
+   }
+   
+   .section-top {
+    margin-top: 60px;
+   }
+   strong {
+    font-weight: 700;
+   }
+   
+   /**======================================
+    CUSTOM CLASS CSS END HERE
+   =========================================**/
+
+
+   /**======================================
+  TOP LIMOUSINE SECTION CSS START HERE
+=========================================**/
+.top-limousine-section {
+    background: #FAFAFA;
+    border-top: 1px solid #ddd;
+    padding: 50px 0px 50px 0;
+   }
+   
+   .top-limousine-head h4 {
+    color: #414141;
+    font-family: "Open Sans", Open Sans;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 37.5px;
+    margin-bottom: 0px;
+   }
+   
+   .top-limousine-head ul {
+    display: grid;
+    grid-template-columns: auto auto;
+    list-style: none;
+    padding-top: 40px;
+   }
+   
+   .top-limousine-head li {
+    font-family: "Open Sans", Open Sans;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 27px;
+   }
+   
+   .top-limousine-head li a {
+    color: #ab8b64;
+   }
+   .top-limousine-head li a:hover {
+    color: #15141a;
+   }
+   .top-limousine-head li:not(:last-child) {
+    margin-bottom: 20px;
+   }
+   
+   /**======================================
+     TOP LIMOUSINE SECTION CSS END HERE
+   =========================================**/
+
+
+   .allegiant-stadium-btn {
+    display: flex;
+    justify-content: space-between;
+   }
+   
+   
+   .allegiant-stadium img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+   }
+   
