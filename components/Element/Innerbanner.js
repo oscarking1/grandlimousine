@@ -1,11 +1,33 @@
 import React, {Component} from 'react';
 import Link from 'next/link'
-import Bookingform from './Bookingform';
-
+import dynamic from 'next/dynamic'
+const Bookingform = dynamic(
+	() => import('./Bookingform'),
+	{
+		ssr: true ,
+		loading: () => <p>...</p>
+	}
+);
+const Loader = dynamic(
+	() => import('./Loader')
+);
 var bnr = "/images/banner/inner-banner.jpg";
 import { STORAGE_URL } from '../../config';
 class InnerBanner extends Component{
+	state = {
+		loading: true
+	}
 	render() {
+		setTimeout(() => {
+			this.setState({ loading: false });
+		}, 5000);
+		const lazayLoad = () => {
+			if (this.state.loading) {
+				return <Loader/>
+			} else {
+				return <Bookingform/>
+			}
+		};
 		if (this.props.banner) {
 			bnr = STORAGE_URL+"/"+this.props.banner;
 		}
@@ -13,9 +35,9 @@ class InnerBanner extends Component{
 			<div className="inner-banner overlay-black-middle" id="home-slider" style={{backgroundImage:"url("+ bnr + ")"}}>
 				<div className="container">        
 					<div className="row">
-						<div className="col-md-6">
+						<div className="col-md-6 text-center">
 							{
-								process.browser ? <Bookingform /> : <></>
+								process.browser ? lazayLoad(): <></>
 							}
 								
 						</div>

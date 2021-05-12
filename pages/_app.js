@@ -2,7 +2,7 @@ import React, { Fragment, useEffect } from 'react'
 
 import '../css/plugins.css';
 import '../css/templete.css';
-// import '../css/global.css';
+import '../css/global.css';
 // import '../css/contact.css';
 // import '../css/superbowl.css';
 
