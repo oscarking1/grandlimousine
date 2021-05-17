@@ -10,7 +10,7 @@ class Footer extends Component{
 						<div className="row">
 							<div className="col-xl-5 col-lg-4 col-md-12 col-sm-12">
 								<div className="widget">
-									<img src="/images/logo-grand.png" className="m-b15" alt="" width="180px" height="58px"/>
+									<img src="/images/logo-grand.png" className="m-b15" alt="Limousine And Chauffeur Service" width="180px" height="58px"/>
 									<p className="text-capitalize m-b20">Grand Limousine and chauffeur service is committed to the success of your business or leisure travel. We are proud to provide all of our clients with the highest level of personalized care and chauffeur service.</p>
 									<div className="subscribe-form m-b20">
 										<form className="dzSubscribe" action="script/mailchamp.php" method="post">

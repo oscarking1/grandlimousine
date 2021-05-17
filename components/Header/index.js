@@ -38,7 +38,7 @@ class Header extends Component {
                         <div className="container clearfix">
 
                             <div className="logo-header mostion">
-                                <Link href={"/"} className="logo-1"><img src="/images/logo-grand.png" width="180px" height="59px" alt="Logo Grand Limousine" /></Link>
+                                <Link href={"/"} className="logo-1"><img src="/images/logo-grand.png" width="180px" height="59px" alt="Grand Limousine - Private Chauffeur and Car Service across USA" /></Link>
                             </div>
 
                             <button className="navbar-toggler collapsed navicon  justify-content-end" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
