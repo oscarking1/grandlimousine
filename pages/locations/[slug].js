@@ -3,8 +3,13 @@ import axios from 'axios'
 import InnerBanner from '../../components/Element/Innerbanner'
 import Error from '../../components/Element/Error'
 import { BASE_URL } from '../../config';
+import { replaceImageExtentionUsingPlatform } from '../../plugins/platform/platform';
 const Location = (response) => {
     let location = response ? response.response : null;
+    let isIOS = false;
+    if (Object.keys(location).length > 0) {
+        isIOS = response.response.isIOS;
+      }
     let title = location ? location.meta_title : 'GRAND LIMOUSINE';
     let description = location ? location.meta_description : 'GRAND LIMOUSINE WEBSITE';
     let keywords = location ? location.meta_keywords : 'GRAND LIMOUSINE WEBSITE';
@@ -24,11 +29,11 @@ const Location = (response) => {
                     {
                         Object.keys(location).length > 0 ?
                             <div>
-                                <InnerBanner banner={location.banner_image ? location.banner_image : null} />
-                                <div dangerouslySetInnerHTML={{ __html: location.description }} />
-                                <div dangerouslySetInnerHTML={{ __html: location.luxury_car_section }} />
-                                <div dangerouslySetInnerHTML={{ __html: location.contact_our_team_section }} />
-                                <div dangerouslySetInnerHTML={{ __html: location.service_locations }} />
+                                <InnerBanner banner={location.banner_image ? location.banner_image : null}  isIOS={ isIOS}/>
+                                <div dangerouslySetInnerHTML={{ __html: replaceImageExtentionUsingPlatform(location.description,isIOS) }} />
+                                <div dangerouslySetInnerHTML={{ __html: replaceImageExtentionUsingPlatform(location.luxury_car_section,isIOS) }} />
+                                <div dangerouslySetInnerHTML={{ __html: replaceImageExtentionUsingPlatform(location.contact_our_team_section,isIOS) }} />
+                                <div dangerouslySetInnerHTML={{ __html: replaceImageExtentionUsingPlatform(location.service_locations,isIOS) }} />
                             </div>
                             :
                             <div>
@@ -45,6 +50,8 @@ const Location = (response) => {
 export const getServerSideProps = async (context) => {
     let slug = context.params.slug
     let response = {};
+    const UA = context.req.headers['user-agent'];
+    const isIOS = Boolean(UA.match('like Mac'));
     try {
         response = await axios.get(`${BASE_URL}/get/page/${slug}`)
         .then(({ data }) => {
@@ -65,6 +72,7 @@ export const getServerSideProps = async (context) => {
             },
           }
     }
+    response.isIOS = isIOS;
     return {
         props: {
             response

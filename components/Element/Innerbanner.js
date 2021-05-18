@@ -1,4 +1,5 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
+import { getImageUrlUsingPlatform } from '../../plugins/platform/platform';
 import Link from 'next/link'
 import dynamic from 'next/dynamic'
 const Bookingform = dynamic(
@@ -12,7 +13,6 @@ const Loader = dynamic(
 	() => import('./Loader')
 );
 var bnr = "/images/banner/inner-banner.jpg";
-import { STORAGE_URL } from '../../config';
 class InnerBanner extends Component{
 	state = {
 		loading: true
@@ -29,10 +29,11 @@ class InnerBanner extends Component{
 			}
 		};
 		if (this.props.banner) {
-			bnr = STORAGE_URL+"/"+this.props.banner;
+			let isIOS = this.props.isIOS ? true : false;
+			bnr = getImageUrlUsingPlatform(this.props.banner,isIOS);
 		}
 		return(
-			<div className="inner-banner overlay-black-middle" id="home-slider" style={{backgroundImage:"url("+ bnr + ")"}}>
+			<div className="inner-banner" id="home-slider" style={{backgroundImage:"url("+ bnr + ")"}}>
 				<div className="container">        
 					<div className="row">
 						<div className="col-md-6 text-center">
