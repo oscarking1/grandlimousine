@@ -33,7 +33,7 @@ class InnerBanner extends Component{
 			bnr = getImageUrlUsingPlatform(this.props.banner,isIOS);
 		}
 		return(
-			<div className="inner-banner" id="home-slider" style={{backgroundImage:"url("+ bnr + ")"}}>
+			<div className="inner-banner overlay-black-middle" id="home-slider" style={{backgroundImage:"url("+ bnr + ")"}}>
 				<div className="container">        
 					<div className="row">
 						<div className="col-md-6 text-center">

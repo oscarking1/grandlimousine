@@ -57,7 +57,7 @@ export const getServerSideProps = async (context) => {
             })
     } catch (error) {
         let Urls = ['whats-next', 'atlanta-courier-services', 'atlanta-convention-transportation', 'river-oaks-77019', 'charlotte-nc-28105',
-            'car-service-houston-hobby', 'contact','milton','contact','greater-heights','destin'];
+            'car-service-houston-hobby', 'contact','milton','contact','greater-heights','destin','booking'];
         if (Urls.includes(slug)) {
             return {
                 redirect: {

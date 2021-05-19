@@ -4,12 +4,13 @@
 @import url("../plugins/bootstrap/css/bootstrap.min.css");
 @import url("../plugins/fontawesome/css/font-awesome.min.css");
 @import url("../css/fonts/stylesheet.css");
+@import url("../plugins/themify/themify-icons.css");
 
-/*@import url("../plugins/line-awesome/css/line-awesome.min.css");
+
+/* @import url("../plugins/line-awesome/css/line-awesome.min.css");
 @import url("../plugins/flaticon/flaticon.css");
 @import url("../plugins/flaticon/font/flaticon.css");
-@import url("../plugins/themify/themify-icons.css");
-@import url("../plugins/simple-icon/css/simple-line-icons.css"); */
+@import url("../plugins/simple-icon/css/simple-line-icons.css");  */
 
 /*=========================
 	All css
