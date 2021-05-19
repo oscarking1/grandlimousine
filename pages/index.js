@@ -1,16 +1,14 @@
-import { useEffect } from 'react'
 import InnerBanner from '../components/Element/Innerbanner';
 import Layout from '../components/Layout';
 import { BASE_URL } from '../config';
 import axios from 'axios'
-import { useRouter } from "next/router";
 import { getImageUrlUsingPlatform, replaceImageExtentionUsingPlatform } from '../plugins/platform/platform';
 const Home = (response) => {
   let res = response ? response.response : null;
   let sliderImages = [];
   let firstImage = "";
   let isIOS = false;
-  let page = { description: "", meta_title: "", meta_description: "", meta_keywords: "",slider_images:[] };
+  let page = { description: "", meta_title: "", meta_description: "", meta_keywords: "", slider_images: [] };
   if (Object.keys(res).length > 0) {
     page = res.page;
     isIOS = response.response.isIOS;
@@ -19,7 +17,7 @@ const Home = (response) => {
         if (i == 0) {
           firstImage = e.image;
         }
-        sliderImages.push(`background-image:url(${getImageUrlUsingPlatform(e.image,isIOS)})`);
+        sliderImages.push(`background-image:url(${getImageUrlUsingPlatform(e.image, isIOS)})`);
       })
     }
   }
@@ -51,37 +49,37 @@ const Home = (response) => {
     }
   }
   if (process.browser) {
-    let animated = false;
-    document.body.onscroll = function (e) {
-      let h = document.querySelector('.home-counter');
-      var offset = h.getBoundingClientRect()
-      var top = offset.top;
-      if (top < window.innerHeight && top >=0 && animated==false) {
-        document.querySelectorAll('.value').forEach(counter => {
-          counter.innerText=0;
-        });
-        runCounter();
-        animated = true;
-        console.log('TOp',top,'window',window.innerHeight)
-      } else {
-        animated = false;
-      }
-      console.log('ANIMATEd',animated)
+    const isInViewport = (el) => {
+      const rect = el.getBoundingClientRect();
+      return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+
+      );
     }
-  }
-  const router = useRouter();
-  let runSLider = true;
-  useEffect(() => {
-    const handleRouteChange = (url) => {
-      if (url == '/') {
-        runCounter();
-        runSLider = true;
-      } else {
-        runSLider = false;
+    document.addEventListener('scroll', function () {
+      let h = document.querySelector('.home-counter');
+      if (h) {
+        if (isInViewport(h)) {
+          let counterVal = 0;
+          document.querySelectorAll('.value').forEach(counter => {
+            counterVal = counter.innerText;
+          });
+          if (counterVal == 0) {
+            runCounter();
+          }
+        } else {
+          document.querySelectorAll('.value').forEach(counter => {
+            counter.innerText = 0;
+          });
+        }
       }
-    };
-    router.events.on("routeChangeComplete", handleRouteChange);
-  }, [router.events]);
+    }, {
+      passive: true
+    });
+  }
   let currentIndex = 0;
   if (process.browser) {
     setInterval(() => {
@@ -89,18 +87,24 @@ const Home = (response) => {
       if (currentIndex == sliderImages.length) {
         currentIndex = 0;
       }
-      if (runSLider) {
-        document.getElementById('home-slider').style = sliderImages[currentIndex]
+      if (sliderImages.length > 0) {
+        if (document.getElementById('home-page-container') && document.getElementById('home-page-container').children.length > 0) {
+          if (document.getElementById('home-page-container').children[0].id == 'home-slider') {
+            document.getElementById('home-page-container').children[0].style = sliderImages[currentIndex]
+          }
+        }
+
       }
     }
-      , 40000);
+      , 40000
+      );
   }
   return (
 
     <Layout meta={meta}>
       <main className="page-wraper">
-        <div className="page-content bg-white">
-          <InnerBanner banner={sliderImages.length>0 ? firstImage : null} isIOS={isIOS} />
+        <div className="page-content bg-white" id="home-page-container">
+          <InnerBanner banner={sliderImages.length > 0 ? firstImage : null} isIOS={isIOS} />
           <div className="content-block">
             <div dangerouslySetInnerHTML={{ __html: replaceImageExtentionUsingPlatform(page.description, isIOS) }} />
           </div>
