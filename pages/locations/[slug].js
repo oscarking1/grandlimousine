@@ -58,7 +58,7 @@ export const getServerSideProps = async (context) => {
                 return data
             })
     } catch (error) {
-        let Urls = ['miami-fl-33101', 'augusta-ga-30805', 'houston-tx-77001'];
+        let Urls = ['miami-fl-33101', 'augusta-ga-30805', 'houston-tx-77001','destin'];
         if (Urls.includes(slug)) {
             return {
                 redirect: {
