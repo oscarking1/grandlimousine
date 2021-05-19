@@ -56,6 +56,16 @@ export const getServerSideProps = async (context) => {
                 return data
             })
     } catch (error) {
+        let Urls = ['whats-next', 'atlanta-courier-services', 'atlanta-convention-transportation', 'river-oaks-77019', 'charlotte-nc-28105',
+            'car-service-houston-hobby', 'contact'];
+        if (Urls.includes(slug)) {
+            return {
+                redirect: {
+                    destination: '/',
+                    permanent: false,
+                },
+            }
+        }
         if (error.response) {
             if (error.response.status == 404) {
                 return {

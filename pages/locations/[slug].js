@@ -9,13 +9,13 @@ const Location = (response) => {
     let isIOS = false;
     if (Object.keys(location).length > 0) {
         isIOS = response.response.isIOS;
-      }
+    }
     let title = location ? location.meta_title : 'GRAND LIMOUSINE';
     let description = location ? location.meta_description : 'GRAND LIMOUSINE WEBSITE';
     let keywords = location ? location.meta_keywords : 'GRAND LIMOUSINE WEBSITE';
     let slug = 'locations/';
-        slug+=location ? location.slug : '';
-        
+    slug += location ? location.slug : '';
+
     const meta = {
         title: title ? title : 'GRAND LIMOUSINE',
         description: description ? description : 'GRAND LIMOUSINE WEBSITE',
@@ -29,15 +29,15 @@ const Location = (response) => {
                     {
                         Object.keys(location).length > 0 ?
                             <div>
-                                <InnerBanner banner={location.banner_image ? location.banner_image : null}  isIOS={ isIOS}/>
-                                <div dangerouslySetInnerHTML={{ __html: replaceImageExtentionUsingPlatform(location.description,isIOS) }} />
-                                <div dangerouslySetInnerHTML={{ __html: replaceImageExtentionUsingPlatform(location.luxury_car_section,isIOS) }} />
-                                <div dangerouslySetInnerHTML={{ __html: replaceImageExtentionUsingPlatform(location.contact_our_team_section,isIOS) }} />
-                                <div dangerouslySetInnerHTML={{ __html: replaceImageExtentionUsingPlatform(location.service_locations,isIOS) }} />
+                                <InnerBanner banner={location.banner_image ? location.banner_image : null} isIOS={isIOS} />
+                                <div dangerouslySetInnerHTML={{ __html: replaceImageExtentionUsingPlatform(location.description, isIOS) }} />
+                                <div dangerouslySetInnerHTML={{ __html: replaceImageExtentionUsingPlatform(location.luxury_car_section, isIOS) }} />
+                                <div dangerouslySetInnerHTML={{ __html: replaceImageExtentionUsingPlatform(location.contact_our_team_section, isIOS) }} />
+                                <div dangerouslySetInnerHTML={{ __html: replaceImageExtentionUsingPlatform(location.service_locations, isIOS) }} />
                             </div>
                             :
                             <div>
-                               <Error></Error>
+                                <Error></Error>
                             </div>
                     }
 
@@ -54,10 +54,19 @@ export const getServerSideProps = async (context) => {
     const isIOS = Boolean(UA.match('like Mac'));
     try {
         response = await axios.get(`${BASE_URL}/get/page/${slug}`)
-        .then(({ data }) => {
-            return data
-        })
+            .then(({ data }) => {
+                return data
+            })
     } catch (error) {
+        let Urls = ['miami-fl-33101', 'augusta-ga-30805', 'houston-tx-77001'];
+        if (Urls.includes(slug)) {
+            return {
+                redirect: {
+                    destination: '/',
+                    permanent: false,
+                },
+            }
+        }
         if (error.response) {
             if (error.response.status == 404) {
                 return {
@@ -67,10 +76,10 @@ export const getServerSideProps = async (context) => {
         }
         return {
             redirect: {
-              destination: '/500',
-              permanent: false,
+                destination: '/500',
+                permanent: false,
             },
-          }
+        }
     }
     response.isIOS = isIOS;
     return {
