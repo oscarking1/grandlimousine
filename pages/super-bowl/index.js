@@ -53,7 +53,10 @@ export const getServerSideProps = async (context) => {
         if (error.response) {
             if (error.response.status == 404) {
                 return {
-                    notFound: true,
+                    redirect: {
+                        destination: '/404',
+                        permanent: false,
+                    },
                 }
             }
         }

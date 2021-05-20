@@ -125,6 +125,12 @@ export const getServerSideProps = async (context) => {
       })
   } catch (error) {
     response = {};
+    return {
+      redirect: {
+          destination: '/500',
+          permanent: false,
+      },
+  }
   }
   response.isIOS = isIOS;
   return {
