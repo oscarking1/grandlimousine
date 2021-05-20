@@ -11,7 +11,7 @@ export default function Layout({ children, meta }) {
         <meta name="theme-color" content="#000000" />
         <meta name="description" content={meta && meta.description} />
         <meta name="keywords" content={meta && meta.keywords} />
-        <link rel="canonical" href={`http://website.grandlimousine.com/${(meta && meta.slug) ? meta.slug + "/" : ''}`} />
+        <link rel="canonical" href={`https://www.grandlimousine.com/${(meta && meta.slug) ? meta.slug + "/" : ''}`} />
 
         <meta name="author" content="Grand Limousine" />
         <meta name="twitter:card" content="summary_large_image" />
@@ -19,16 +19,16 @@ export default function Layout({ children, meta }) {
         <meta name="twitter:description" content={meta && meta.description} />
         <meta name="twitter:site" content="@grandlimousin" />
         <meta name="twitter:creator" content="@grandlimousin" />
-        <meta name="twitter:image" content="http://website.grandlimousine.com/images/banner/inner-banner.jpg" />
+        <meta name="twitter:image" content="https://www.grandlimousine.com/images/banner/inner-banner.jpg" />
         <meta property="og:title" content={meta && meta.title} />
         <meta property="og:description" content={meta && meta.description} />
         <meta property="og:locale" content="en_US" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="Grand Limousine" />
         <meta property="og:type" content="business.business" />
-        <meta property="og:url" content={`http://website.grandlimousine.com/${(meta && meta.slug) ? meta.slug + "/" : ''}`} />
-        <meta property="og:image" content="http://website.grandlimousine.com/images/banner/inner-banner.jpg" />
-        <meta property="og:image:secure_url" content="https://website.grandlimousine.com/images/banner/inner-banner.jpg" />
+        <meta property="og:url" content={`https://www.grandlimousine.com/${(meta && meta.slug) ? meta.slug + "/" : ''}`} />
+        <meta property="og:image" content="https://www.grandlimousine.com/images/banner/inner-banner.jpg" />
+        <meta property="og:image:secure_url" content="httpss://www.grandlimousine.com/images/banner/inner-banner.jpg" />
         <meta property="og:image:type" content="image/jpeg" />
         <meta property="og:image:width" content="1903" />
         <meta property="og:image:height" content="537" />
@@ -40,7 +40,7 @@ export default function Layout({ children, meta }) {
         <meta property="business:contact_data:country_name" content="United States" />
         <meta property="business:contact_data:email" content="info@grandlimousine.com" />
         <meta property="business:contact_data:phone_number" content="1 (404) 424-4499" />
-        <meta property="business:contact_data:website" content="http://website.grandlimousine.com/" />
+        <meta property="business:contact_data:website" content="https://www.grandlimousine.com/" />
         <meta property="place:location:latitude" content="29.7604" />
         <meta property="place:location:longitude" content="-95.3698" />
 
