@@ -28,7 +28,7 @@ export default function Layout({ children, meta }) {
         <meta property="og:type" content="business.business" />
         <meta property="og:url" content={`https://www.grandlimousine.com/${(meta && meta.slug) ? meta.slug + "/" : ''}`} />
         <meta property="og:image" content="https://www.grandlimousine.com/images/banner/inner-banner.jpg" />
-        <meta property="og:image:secure_url" content="httpss://www.grandlimousine.com/images/banner/inner-banner.jpg" />
+        <meta property="og:image:secure_url" content="https://www.grandlimousine.com/images/banner/inner-banner.jpg" />
         <meta property="og:image:type" content="image/jpeg" />
         <meta property="og:image:width" content="1903" />
         <meta property="og:image:height" content="537" />
