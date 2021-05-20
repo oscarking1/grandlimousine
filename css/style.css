@@ -14288,7 +14288,7 @@ body, html {
    border-color: #ab8b64;
   }
   
-  button.submit-btn, .custom-btn a, a.custom-btn {
+  button.submit-btn, .custom-btn a, a.custom-btn,p.submit-btn {
    background-color: #AB8B64;
    color: #ffffff !important;
    line-height: 1;
@@ -15332,6 +15332,11 @@ body, html {
   /**==========================================
        MEDIA QUERY HOME PAGE CSS END HERE
   =============================================**/
-  
+  .error-msg{
+      color:red;
+  }
+  .success-msg{
+      color:#188038;
+  }
   
   

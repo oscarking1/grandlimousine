@@ -102,7 +102,7 @@ class Header extends Component {
                                     </li>
                                     <li className=""><Link href={"/posts/"} rel="noopener noreferrer">Posts</Link></li>
 									<li><Link href={"/contact-us/"} rel="noopener noreferrer">Contact Us</Link></li>
-									<li className="my-account" ><a href="https://account.chauffeurbookingsoftware.com/account/login/?guid=123fd7f0-ff6c-4a9d-80fb-05c694c9ed03" rel="noopener noreferrer" target="_blank">My Account <i className="ti-import m-r5 rotate90"></i> </a></li>
+									<li className="my-account" ><a href="https://account.chauffeurbookingsoftware.com/account/login/?guid=123fd7f0-ff6c-4a9d-80fb-05c694c9ed03" rel="nofollow noopener noreferrer" target="_blank">My Account <i className="ti-import m-r5 rotate90"></i> </a></li>
 
                                 </ul>
                             </div>
