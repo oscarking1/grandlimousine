@@ -4,6 +4,7 @@ import InnerBanner from '../components/Element/Innerbanner'
 import Error from '../components/Element/Error'
 import { BASE_URL } from '../config';
 import { replaceImageExtentionUsingPlatform } from '../plugins/platform/platform';
+import Toplimousine from '../components/Element/Toplimousine';
 const Service = (response) => {
     let service = response ? response.response : null;
     let isIOS = false;
@@ -32,6 +33,7 @@ const Service = (response) => {
                                 <div dangerouslySetInnerHTML={{ __html: replaceImageExtentionUsingPlatform(service.luxury_car_section,isIOS) }} />
                                 <div dangerouslySetInnerHTML={{ __html: replaceImageExtentionUsingPlatform(service.contact_our_team_section,isIOS) }} />
                                 <div dangerouslySetInnerHTML={{ __html: replaceImageExtentionUsingPlatform(service.service_locations,isIOS) }} />
+                                {/* {service.top_limousine_service_locations ? <Toplimousine/> : <></> }  */}
                             </div>
                             :
                             <div>
