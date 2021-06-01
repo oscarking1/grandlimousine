@@ -1,4 +1,41 @@
 User-agent: *
-Disallow: 
+
+Disallow: https://www.grandlimousine.com/milton/
+Disallow: https://www.grandlimousine.com/valdosta-car-service/
+Disallow: https://grandlimousine.com/file.html
+Disallow: https://www.grandlimousine.com/locations/lax-car-service/
+Disallow: https://www.grandlimousine.com/locations/atlanta-ga-30301/
+Disallow: https://grandlimousine.com/2896eim7t964/97887fec9.world
+Disallow: https://grandlimousine.com/2897eim0t025/415c.amfam
+Disallow: https://www.grandlimousine.com/mcdonough-car-service-atlanta-atl/
+Disallow: https://www.grandlimousine.com/lawrenceville-car-service-atlanta-atl/
+Disallow: https://www.grandlimousine.com/milledgeville-car-service-atlanta-atl/
+Disallow: https://www.grandlimousine.com/locations/san-francisco-ca-94016/
+Disallow: https://www.grandlimousine.com/locations/los-angeles-ca-90001/
+Disallow: https://www.grandlimousine.com/greatwood-car-service-houston-hou-airport/
+Disallow: https://www.grandlimousine.com/car-service-tallahassee-tlh/
+Disallow: https://www.grandlimousine.com/athens-car-service-atlanta-atl-airport/
+Disallow: https://www.grandlimousine.com/augusta-traditions-of-the-masters-tournament/
+Disallow: https://www.grandlimousine.com/sea-island-car-service-jacksonville-jax/
+Disallow: https://www.grandlimousine.com/galveston-car-service-houston-iah-airport/
+Disallow: https://www.grandlimousine.com/buford-car-service-atlanta-atl-airport/
+Disallow: https://www.grandlimousine.com/sugar-loaf-car-service-atlanta-atl-airport/
+Disallow: https://www.grandlimousine.com/airport-car-service-to-recommend-to-corporations/
+Disallow: https://www.grandlimousine.com/locations/atlanta-party-bus/?bamp-skip-redirect=1%2Famp%2F
+Disallow: https://www.grandlimousine.com/augusta-car-limo-service-augusta-ga-this-is-what-professionals-do/
+Disallow: https://www.grandlimousine.com/san-antonio-airport-car-service-san-antonio-grand-limousine-corporate-transportation/
+Disallow: http://website.grandlimousine.com/*
+Disallow: http://mail.grandlimousine.com/1067
+Disallow: https://www.grandlimousine.com/9oqvj
+Disallow: https://www.grandlimousine.com/booking/
+Disallow: https://www.grandlimousine.com/uiwcp
+Disallow: https://www.grandlimousine.com/iu5u5
+Disallow: https://grandlimousine.com/s77
+Disallow: http://website.grandlimousine.com/posts
+Disallow: https://www.grandlimousine.com/greater-heights/
+Disallow: http://website.grandlimousine.com/locations/atlanta-limousine
+Disallow: http://website.grandlimousine.com/locations/atlanta-party-bus
+Disallow: https://www.grandlimousine.com/cordele-car-service-atlanta-atl-airport/
+Disallow: https://www.grandlimousine.com/locations/atlanta-party-bus?bamp-skip-redirect=1%2Famp%2F
 
 Sitemap: https://www.grandlimousine.com/sitemap.xml
