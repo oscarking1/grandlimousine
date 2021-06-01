@@ -5,6 +5,7 @@ import { BASE_URL } from '../../config';
 import axios from 'axios'
 import Error from '../../components/Element/Error'
 import { replaceImageExtentionUsingPlatform } from '../../plugins/platform/platform';
+import Toplimousine from '../../components/Element/Toplimousine';
 const Locations = (response) => {
     let location = response ? response.response : null;
     let isIOS = false;
@@ -33,6 +34,7 @@ const Locations = (response) => {
                                 <div dangerouslySetInnerHTML={{ __html: replaceImageExtentionUsingPlatform(location.luxury_car_section,isIOS) }} />
                                 <div dangerouslySetInnerHTML={{ __html: replaceImageExtentionUsingPlatform(location.contact_our_team_section,isIOS) }} />
                                 <div dangerouslySetInnerHTML={{ __html: replaceImageExtentionUsingPlatform(location.service_locations,isIOS)}} />
+                               {/* {location.top_limousine_service_locations ? <Toplimousine/> : <></> }  */}
                             </div>
                             :
                             <div>
