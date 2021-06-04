@@ -34,8 +34,8 @@ const Location = (response) => {
                                 <div dangerouslySetInnerHTML={{ __html: replaceImageExtentionUsingPlatform(location.description, isIOS) }} />
                                 <div dangerouslySetInnerHTML={{ __html: replaceImageExtentionUsingPlatform(location.luxury_car_section, isIOS) }} />
                                 <div dangerouslySetInnerHTML={{ __html: replaceImageExtentionUsingPlatform(location.contact_our_team_section, isIOS) }} />
-                                <div dangerouslySetInnerHTML={{ __html: replaceImageExtentionUsingPlatform(location.service_locations, isIOS) }} />
-                                {/* {location.top_limousine_service_locations ? <Toplimousine/> : <></> }  */}
+                                {/* <div dangerouslySetInnerHTML={{ __html: replaceImageExtentionUsingPlatform(location.service_locations, isIOS) }} /> */}
+                                {location.top_limousine_service_locations ? <Toplimousine/> : <></> } 
                             </div>
                             :
                             <div>

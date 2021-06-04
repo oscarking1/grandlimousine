@@ -32,8 +32,8 @@ const Service = (response) => {
                                 <div dangerouslySetInnerHTML={{ __html: replaceImageExtentionUsingPlatform(service.description,isIOS) }} />
                                 <div dangerouslySetInnerHTML={{ __html: replaceImageExtentionUsingPlatform(service.luxury_car_section,isIOS) }} />
                                 <div dangerouslySetInnerHTML={{ __html: replaceImageExtentionUsingPlatform(service.contact_our_team_section,isIOS) }} />
-                                <div dangerouslySetInnerHTML={{ __html: replaceImageExtentionUsingPlatform(service.service_locations,isIOS) }} />
-                                {/* {service.top_limousine_service_locations ? <Toplimousine/> : <></> }  */}
+                                {/* <div dangerouslySetInnerHTML={{ __html: replaceImageExtentionUsingPlatform(service.service_locations,isIOS) }} /> */}
+                                {service.top_limousine_service_locations ? <Toplimousine/> : <></> } 
                             </div>
                             :
                             <div>
