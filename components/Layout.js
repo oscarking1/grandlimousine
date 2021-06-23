@@ -43,6 +43,7 @@ export default function Layout({ children, meta }) {
         <meta property="business:contact_data:website" content="https://www.grandlimousine.com/" />
         <meta property="place:location:latitude" content="29.7604" />
         <meta property="place:location:longitude" content="-95.3698" />
+        <meta name="thumbnail" content={`https://www.grandlimousine.com/${(meta && meta.banner) ? meta.banner + "/" : ''}`} />
 
       </Head>
       <Header />
