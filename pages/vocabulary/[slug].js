@@ -53,7 +53,7 @@ export const getServerSideProps = async (context) => {
     const UA = context.req.headers['user-agent'];
     const isIOS = Boolean(UA.match('like Mac'));
     try {
-        response = await axios.get(`${BASE_URL}/get/servicePage/${slug}`)
+        response = await axios.get(`${BASE_URL}/get/servicePage/vocabulary/${slug}`)
             .then(({ data }) => {
                 return data
             })
