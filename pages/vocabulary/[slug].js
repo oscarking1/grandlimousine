@@ -19,7 +19,8 @@ const Service = (response) => {
         title: title ? title : 'GRAND LIMOUSINE',
         description: description ? description : 'GRAND LIMOUSINE WEBSITE',
         keywords: keywords ? keywords : 'react,meta,document,html,tags',
-        slug: slug
+        slug: slug,
+        banner:service && service.banner_image ? service.banner_image : null
     };
     return (
         <Layout meta={meta}>

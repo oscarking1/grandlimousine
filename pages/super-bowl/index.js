@@ -17,7 +17,8 @@ const Superbowl = (response) => {
         title: page.meta_title,
         description: page.meta_description,
         keywords: page.meta_keywords,
-        slug: page.slug
+        slug: page.slug,
+        banner:page && page.banner_image ? page.banner_image : null
     }
     return (
         <Layout meta={meta}>

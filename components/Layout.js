@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Header from './Header';
 import Footer from './Footer';
+import { getImageUrlUsingPlatform } from '../plugins/platform/platform';
 export default function Layout({ children, meta }) {
   return (
     <div>
@@ -43,7 +44,7 @@ export default function Layout({ children, meta }) {
         <meta property="business:contact_data:website" content="https://www.grandlimousine.com/" />
         <meta property="place:location:latitude" content="29.7604" />
         <meta property="place:location:longitude" content="-95.3698" />
-        <meta name="thumbnail" content={`https://www.grandlimousine.com/${(meta && meta.banner) ? meta.banner + "/" : ''}`} />
+        <meta name="thumbnail" content={`https://www.grandlimousine.com${(meta && meta.banner) ? getImageUrlUsingPlatform(meta.banner) + "/" : '/images/banner/inner-banner.jpg/'}`} />
 
       </Head>
       <Header />

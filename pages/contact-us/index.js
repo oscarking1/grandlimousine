@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-var bnr = "/images/banner/inner-banner.jpg"
 import Layout from '../../components/Layout';
 import InnerBanner from '../../components/Element/Innerbanner';
 import Toplimousine from '../../components/Element/Toplimousine';

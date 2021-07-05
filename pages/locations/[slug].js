@@ -21,7 +21,8 @@ const Location = (response) => {
         title: title ? title : 'GRAND LIMOUSINE',
         description: description ? description : 'GRAND LIMOUSINE WEBSITE',
         keywords: keywords ? keywords : 'react,meta,document,html,tags',
-        slug: slug
+        slug: slug,
+        banner:location && location.banner_image ? location.banner_image : null
     };
     return (
         <Layout meta={meta}>

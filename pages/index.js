@@ -25,7 +25,7 @@ const Home = (response) => {
     title: page.meta_title,
     description: page.meta_description,
     keywords: page.meta_keywords,
-    banner:firstImage ? getImageUrlUsingPlatform(firstImage) : ''
+    banner:firstImage ? firstImage  : ''
   }
   const runCounter = () => {
     if (process.browser) {
