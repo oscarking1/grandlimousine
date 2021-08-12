@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Link from 'next/link'
-import { BASE_URL } from '../../config';
+import { HTTPS_BASE_URL } from '../../config';
 import axios from 'axios'
 class Footer extends Component {
 	constructor(props) {
@@ -18,7 +18,7 @@ class Footer extends Component {
 			return;
 		}
 		this.setState({ is_request_in_progress: true, request_msg: '', request_status: 1 });
-		axios.post(`${BASE_URL}/subscribe-email`, { email: this.state.email })
+		axios.post(`${HTTPS_BASE_URL}/subscribe-email`, { email: this.state.email })
 			.then(res => {
 				this.setState({email:'', is_request_in_progress: false, request_msg: res.data.msg, request_status: 1 });
 			})
