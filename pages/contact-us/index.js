@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Layout from '../../components/Layout';
 import InnerBanner from '../../components/Element/Innerbanner';
 import Toplimousine from '../../components/Element/Toplimousine';
-import { BASE_URL } from '../../config';
+import { HTTPS_BASE_URL } from '../../config';
 import axios from 'axios'
 class Contactus extends Component {
 	constructor(props) {
@@ -35,7 +35,7 @@ class Contactus extends Component {
 
 		
 		this.setState({ is_request_in_progress: true, request_msg: '', request_status: 1 });
-		axios.post(`${BASE_URL}/submit-contact-form`, {first_name:this.state.first_name,last_name:this.state.last_name, email: this.state.email , phone:this.state.phone })
+		axios.post(`${HTTPS_BASE_URL}/submit-contact-form`, {first_name:this.state.first_name,last_name:this.state.last_name, email: this.state.email , phone:this.state.phone })
 			.then(res => {
 				this.setState({ first_name:'',last_name:'',email: '',phone:'', is_request_in_progress: false, request_msg: res.data.msg, request_status: 1 });
 			})
