@@ -14265,9 +14265,7 @@ body, html {
   =========================================**/
   
   .heading h4, .heading h2 {
-   font-size: 18.6px;
    font-weight: 600;
-   line-height: 28px;
    padding-top: 20px;
    color: #ab8b64;
   }
