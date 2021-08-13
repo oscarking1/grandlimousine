@@ -65,12 +65,12 @@
     background-repeat: no-repeat;
     background-size: cover;
    }
-   .inner-banner .bnr-content h2 a {
+   .inner-banner .bnr-content h4 a {
     color: #fff;
-    font-weight: 400;
+    font-weight: 600;
    }
    
-   .inner-banner .bnr-content h2 a:hover {
+   .inner-banner .bnr-content h4 a:hover {
     text-decoration: underline;
    }
    
@@ -81,7 +81,7 @@
     font-family: "Open Sans", Open Sans;
    }
    
-   .inner-banner .bnr-content h2, 
+   .inner-banner .bnr-content h4, 
    .inner-banner .bnr-content h6 {
     margin-bottom: 15px;
    }

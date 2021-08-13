@@ -125,7 +125,6 @@ class Footer extends Component {
 						<div className="row">
 							<div className="col-lg-12 text-center">
 								<span className="fbottom-like"> © 2021, Grand Limousine. All Rights Reserved.</span>
-
 							</div>
 						</div>
 					</div>
