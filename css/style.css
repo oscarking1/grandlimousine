@@ -14265,9 +14265,7 @@ body, html {
   =========================================**/
   
   .heading h4, .heading h2 {
-   font-size: 18.6px;
    font-weight: 600;
-   line-height: 28px;
    padding-top: 20px;
    color: #ab8b64;
   }
@@ -14327,38 +14325,38 @@ body, html {
    background-repeat: no-repeat;
    background-size: cover;
   }
-  .inner-banner .bnr-content h2 a {
-   color: #fff;
-   font-weight: 400;
-  }
-  
-  .inner-banner .bnr-content h2 a:hover {
-   text-decoration: underline;
-  }
-  
-  .inner-banner .bnr-content h6, 
-  .inner-banner .bnr-content h3, 
-  .inner-banner .bnr-content h3 a {
-   color: #fff;
-   font-family: 'Roboto';
-  }
-  
-  .inner-banner .bnr-content h2, 
-  .inner-banner .bnr-content h6 {
-   margin-bottom: 15px;
-  }
-  .inner-banner .bnr-content h2 a {
-   font-size: 38px;
-  }
-  .inner-banner .bnr-content h2 a,
-  .inner-banner .bnr-content h3 a, 
-  .inner-banner .bnr-content h3 {
-   font-weight: 600;
-  }
-  .inner-banner .bnr-content h3 {
-   font-size: 40px;
-   margin: 40px 0 0 0;
-  }
+  .inner-banner .bnr-content h4 a {
+    color: #fff;
+    font-weight: 600;
+   }
+   
+   .inner-banner .bnr-content h4 a:hover {
+    text-decoration: underline;
+   }
+   
+   .inner-banner .bnr-content h6, 
+   .inner-banner .bnr-content h3, 
+   .inner-banner .bnr-content h3 a {
+    color: #fff;
+    font-family: "Open Sans", Open Sans;
+   }
+   
+   .inner-banner .bnr-content h4, 
+   .inner-banner .bnr-content h6 {
+    margin-bottom: 15px;
+   }
+   .inner-banner .bnr-content h2 a {
+    font-size: 38px;
+   }
+   .inner-banner .bnr-content h2 a,
+   .inner-banner .bnr-content h3 a, 
+   .inner-banner .bnr-content h3 {
+    font-weight: 600;
+   }
+   .inner-banner .bnr-content h3 {
+    font-size: 40px;
+    margin: 40px 0 0 0;
+   }
   
   .section-top {
    margin-top: 60px;

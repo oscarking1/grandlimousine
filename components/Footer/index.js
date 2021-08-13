@@ -111,9 +111,9 @@ class Footer extends Component {
 								<div className="widget widget_getintuch">
 									<h5 className="m-b30 text-white">Contact us</h5>
 									<ul>
-										<li><i className="ti-location-pin"></i><strong>address</strong> <a target="_blank" href="https://goo.gl/maps/ob8TJNCTuX7d5RWG9" rel="nofollow" >houston, tx 77041, texas, usa</a></li>
+										<li><i className="ti-location-pin"></i><strong>address</strong> <a target="_blank" href="https://goo.gl/maps/ob8TJNCTuX7d5RWG9" rel="nofollow" >houston, tx 77041, texas, USA</a></li>
 										<li><i className="ti-mobile"></i><strong>phone</strong><a href="tel:+14044244499" >+1 (404) 424-4499</a></li>
-										<li><i className="ti-email"></i><strong>email</strong><a target="_blank" href="mailto:info@grandlimousine.com" >info@grandlimousine.com</a></li>
+										<li><i className="ti-email"></i><strong>email</strong><a style={{textTransform: "lowercase !important"}} target="_blank" href="mailto:info@grandlimousine.com" >info@grandlimousine.com</a></li>
 									</ul>
 								</div>
 							</div>
@@ -125,7 +125,6 @@ class Footer extends Component {
 						<div className="row">
 							<div className="col-lg-12 text-center">
 								<span className="fbottom-like"> © 2021, Grand Limousine. All Rights Reserved.</span>
-
 							</div>
 						</div>
 					</div>
