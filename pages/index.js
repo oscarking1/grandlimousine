@@ -107,7 +107,7 @@ const Home = (response) => {
         <div className="page-content bg-white" id="home-page-container">
           <InnerBanner banner={sliderImages.length > 0 ? firstImage : null} isIOS={isIOS} />
           <div className="content-block">
-            <div dangerouslySetInnerHTML={{ __html: replaceImageExtentionUsingPlatform(page.description, isIOS) }} />
+            <div dangerouslySetInnerHTML={{ __html: (replaceImageExtentionUsingPlatform(page.description, isIOS) || '') }} />
           </div>
         </div>
       </main>
